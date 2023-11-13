@@ -17,13 +17,22 @@ def is_empty():
     #    return False
     return get_size() == 0
 
+"""
+    This add an element to the back of the queue
+"""
 def enqueue(element):
     queue.append(element)
 
+"""
+    This peek and return the element that is at the front of the queue
+"""
 def peek():
     front = queue[0]
     return front 
 
+"""
+    This remove an element from the front of the queue
+"""
 def dequeue():
     front = queue.pop(0)
     return front
